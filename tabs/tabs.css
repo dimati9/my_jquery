@@ -1,0 +1,37 @@
+.tabs {
+    border: 1px solid green;
+    background: #7DCA86;
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+}
+.blocks_captions {
+    display: flex;
+}
+.blocks_captions > .block {
+    padding: 15px;
+    display: block;
+
+    margin: 0 auto;
+    text-align: center;
+
+}
+.blocks_captions > .block:hover {
+    background-color: #0094D6;
+    cursor: pointer;
+}
+.block.active {
+    background-color: #0094D6;
+    color:#fff;
+}
+.text {
+    padding: 50px;
+    display: none;
+    color:#fff;
+    font-size: 18px;
+}
+.text.active {
+    display: block;
+    background-color: #0094D6;
+}
+

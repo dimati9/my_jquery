@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+
+<button class="button">Затемнить экран и показать форму</button>
+<form method="post" class="hide" action="index.html" onsubmit="return validator();">
+<img src="close.png" alt="close" class="close_form close">
+    <div class="flex">
+        <div class="block">
+            <h3>Ваше имя</h3>
+            <input type="text" id="name" placeholder="Ваше имя" name="name">
+            <h4 id="name-error" ></h4>
+        </div>
+
+        <div class="block">
+            <h3>Ваш номер телефона</h3>
+            <input type="text" id="phone" placeholder="Ваш номер" name="phone" oninput="this.value = this.value.replace(/\D/g, '')";)>
+            <h4 id="phone-error" ></h4>
+        </div>
+        <div class="block">
+            <h3>Пароль</h3>
+            <input type="text" id="password" placeholder="Пароль" name="password">
+            <h4 id="password-error" ></h4>
+        </div>
+        <div class="block">
+            <h3>Пароль ещё раз</h3>
+            <input type="text" id="repassword" placeholder="Повторите пароль" name="repassword">
+            <h4 id="repassword-error" ></h4>
+        </div>
+    </div>
+
+    <input type="submit" value="Отправить" id="submit">
+</form>
+<div class="mask close"></div>
+<script src="script.js"></script>
+</body>
+</html>
